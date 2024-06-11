@@ -1,0 +1,128 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: purple url("file:///C:/Users/Harika%20A/Downloads/bg%20(1).svg")
+    center/cover;
+}
+h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #1d005f;
+  margin: 1rem 0 1.5rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.quote-card {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
+    1px 1px 2px #555;
+  backdrop-filter: blur(0.8rem);
+
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 400px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: auto;
+}
+
+.quote-card p {
+  font-size: 1.2em;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.button-group button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.button-group button:hover {
+  background: #0056b3;
+}
+
+.quote-list {
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+.quote-list h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #1d005f;
+}
+
+.quote-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quote-list li {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
+    1px 1px 2px #555;
+  backdrop-filter: blur(0.8rem);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.quote-list button {
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quote-list button:hover {
+  background: #e60000;
+}
+@media (max-width: 480px) {
+  .quote-card {
+    width: 70%;
+    height: 200px;
+  }
+
+  .quote-list {
+    max-width: 70%;
+  }
+}
